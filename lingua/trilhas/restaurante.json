@@ -1,0 +1,119 @@
+{
+  "id": "restaurante",
+  "titulo": "No restaurante",
+  "nivel": "A2",
+  "persona": {
+    "nome": "Emily",
+    "papel": "garçonete em um restaurante em Nova York",
+    "voz": "en-US-Neural2-F",
+    "estilo": "simpática e animada, ritmo rápido"
+  },
+  "vocabulario_alvo": [
+    "reservation",
+    "menu",
+    "order",
+    "side dish",
+    "allergy",
+    "check",
+    "dessert"
+  ],
+  "nos": [
+    {
+      "id": "n1",
+      "fala_ia": "Hi there! Welcome in. Do you have a reservation, or is it just walk-in?",
+      "resposta_alvo": "No reservation, just two of us.",
+      "alternativas_aceitas": ["We don't have a reservation, table for two, please."],
+      "dica_pt": "Diga que não tem reserva e que são duas pessoas.",
+      "proximo": { "padrao": "n2" }
+    },
+    {
+      "id": "n2",
+      "fala_ia": "No problem! Right this way. Here are your menus. Can I start you off with something to drink?",
+      "resposta_alvo": "Just water for me, please.",
+      "alternativas_aceitas": ["I'll have a lemonade, please."],
+      "dica_pt": "Peça uma bebida, por exemplo água.",
+      "proximo": { "padrao": "n3" }
+    },
+    {
+      "id": "n3",
+      "fala_ia": "Sure thing. Are you ready to order, or do you need a few more minutes?",
+      "resposta_alvo": "We're ready to order.",
+      "alternativas_aceitas": ["We need a couple more minutes, please."],
+      "dica_pt": "Diga que já estão prontos para pedir.",
+      "proximo": { "padrao": "n4" }
+    },
+    {
+      "id": "n4",
+      "fala_ia": "Great, what can I get for you?",
+      "resposta_alvo": "I'll have the grilled chicken salad.",
+      "alternativas_aceitas": ["I'd like the grilled chicken salad, please."],
+      "dica_pt": "Peça a salada de frango grelhado.",
+      "proximo": { "padrao": "n5", "se_alergia": "n5b" }
+    },
+    {
+      "id": "n5",
+      "fala_ia": "Excellent choice. Would you like any sides with that?",
+      "resposta_alvo": "No sides, thank you.",
+      "alternativas_aceitas": ["I'll take some fries on the side."],
+      "dica_pt": "Diga que não quer acompanhamento.",
+      "proximo": { "padrao": "n6" }
+    },
+    {
+      "id": "n5b",
+      "fala_ia": "Thanks for letting me know. I'll make sure the kitchen avoids that. Anything else?",
+      "resposta_alvo": "That's all, thank you.",
+      "alternativas_aceitas": ["No, that's everything."],
+      "dica_pt": "Diga que é só isso.",
+      "proximo": { "padrao": "n6" }
+    },
+    {
+      "id": "n6",
+      "fala_ia": "Perfect, I'll get that started for you.",
+      "resposta_alvo": "Thank you so much.",
+      "alternativas_aceitas": ["Thanks a lot."],
+      "dica_pt": "Agradeça.",
+      "proximo": { "padrao": "n7" }
+    },
+    {
+      "id": "n7",
+      "fala_ia": "Here's your order! Enjoy your meal. Let me know if you need anything.",
+      "resposta_alvo": "This looks great, thank you.",
+      "alternativas_aceitas": ["Wow, this looks delicious!"],
+      "dica_pt": "Elogie a comida ao receber o pedido.",
+      "proximo": { "padrao": "n8" }
+    },
+    {
+      "id": "n8",
+      "fala_ia": "How was everything? Can I get you some dessert or the check?",
+      "resposta_alvo": "Just the check, please.",
+      "alternativas_aceitas": ["Could we have the bill, please?"],
+      "dica_pt": "Peça a conta.",
+      "proximo": { "padrao": "n9", "se_sobremesa": "n9b" }
+    },
+    {
+      "id": "n9",
+      "fala_ia": "Sure, I'll bring that right over. Will this be one bill or separate?",
+      "resposta_alvo": "One bill, please.",
+      "alternativas_aceitas": ["Together, please."],
+      "dica_pt": "Diga que quer a conta junta.",
+      "proximo": { "padrao": "n10" }
+    },
+    {
+      "id": "n9b",
+      "fala_ia": "Of course! We have chocolate cake and cheesecake today.",
+      "resposta_alvo": "I'll try the cheesecake, please.",
+      "alternativas_aceitas": ["The chocolate cake sounds good."],
+      "dica_pt": "Escolha uma sobremesa, por exemplo cheesecake.",
+      "proximo": { "padrao": "n10" }
+    },
+    {
+      "id": "n10",
+      "fala_ia": "Here you go. Have a great rest of your day!",
+      "resposta_alvo": "Thank you, you too!",
+      "alternativas_aceitas": ["Thanks, have a good one!"],
+      "dica_pt": "Despeça-se desejando um bom dia.",
+      "proximo": { "padrao": "fim" }
+    }
+  ],
+  "modo_livre_seed": "Continue o atendimento improvisando pedidos extras ou dúvidas do cliente sobre o cardápio."
+}

@@ -1,0 +1,111 @@
+{
+  "id": "entrevista",
+  "titulo": "Entrevista de emprego",
+  "nivel": "B1",
+  "persona": {
+    "nome": "Sarah Mitchell",
+    "papel": "gerente de RH em uma empresa de tecnologia",
+    "voz": "en-US-Neural2-D",
+    "estilo": "profissional, tom firme mas amigável"
+  },
+  "vocabulario_alvo": [
+    "strength",
+    "weakness",
+    "deadline",
+    "notice period",
+    "salary expectations",
+    "team",
+    "opportunity"
+  ],
+  "nos": [
+    {
+      "id": "n1",
+      "fala_ia": "Good morning! Thanks for coming in today. Could you start by telling me a little about yourself?",
+      "resposta_alvo": "Sure. I have five years of experience in software development, and I'm currently working as a backend developer.",
+      "alternativas_aceitas": ["Of course. I've been working in software development for five years, mostly as a backend developer."],
+      "dica_pt": "Fale brevemente sobre sua experiência profissional.",
+      "proximo": { "padrao": "n2" }
+    },
+    {
+      "id": "n2",
+      "fala_ia": "That's great. Why are you interested in this position?",
+      "resposta_alvo": "I'm looking for new challenges, and this role matches my skills perfectly.",
+      "alternativas_aceitas": ["I want to grow professionally, and this position really fits my experience."],
+      "dica_pt": "Explique por que se interessou pela vaga.",
+      "proximo": { "padrao": "n3" }
+    },
+    {
+      "id": "n3",
+      "fala_ia": "What would you say is your biggest strength?",
+      "resposta_alvo": "I'm very good at solving problems under pressure.",
+      "alternativas_aceitas": ["I'd say my strongest skill is teamwork."],
+      "dica_pt": "Fale sobre um ponto forte seu.",
+      "proximo": { "padrao": "n4" }
+    },
+    {
+      "id": "n4",
+      "fala_ia": "And what about a weakness you're working on?",
+      "resposta_alvo": "Sometimes I focus too much on details, but I'm learning to manage my time better.",
+      "alternativas_aceitas": ["I used to struggle with public speaking, but I've been practicing a lot."],
+      "dica_pt": "Fale sobre um ponto fraco que está melhorando.",
+      "proximo": { "padrao": "n5" }
+    },
+    {
+      "id": "n5",
+      "fala_ia": "Can you tell me about a challenge you faced at work and how you handled it?",
+      "resposta_alvo": "In my last job, we had a tight deadline, so I organized the team and we finished the project on time.",
+      "alternativas_aceitas": ["Once we had a major bug in production, and I stayed late to fix it before the deadline."],
+      "dica_pt": "Conte brevemente sobre um desafio profissional que superou.",
+      "proximo": { "padrao": "n6", "se_pergunta_salario": "n6b" }
+    },
+    {
+      "id": "n6",
+      "fala_ia": "That's impressive. Do you have any questions about the role or the company?",
+      "resposta_alvo": "Yes, what does a typical day look like in this position?",
+      "alternativas_aceitas": ["Could you tell me more about the team I'd be working with?"],
+      "dica_pt": "Faça uma pergunta sobre a vaga ou a empresa.",
+      "proximo": { "padrao": "n7" }
+    },
+    {
+      "id": "n6b",
+      "fala_ia": "We can definitely talk about salary. What are your expectations?",
+      "resposta_alvo": "I'm expecting a salary in line with the market average for this role.",
+      "alternativas_aceitas": ["I'd like something competitive, based on my experience."],
+      "dica_pt": "Fale sobre sua expectativa salarial de forma diplomática.",
+      "proximo": { "padrao": "n7" }
+    },
+    {
+      "id": "n7",
+      "fala_ia": "Good question. You'd be working closely with the product and design teams on new features.",
+      "resposta_alvo": "That sounds interesting, thank you.",
+      "alternativas_aceitas": ["That sounds like a great fit for me."],
+      "dica_pt": "Demonstre interesse na resposta.",
+      "proximo": { "padrao": "n8" }
+    },
+    {
+      "id": "n8",
+      "fala_ia": "Are you available to start within the next month?",
+      "resposta_alvo": "Yes, I could start in two weeks.",
+      "alternativas_aceitas": ["Yes, I'm available whenever you need me."],
+      "dica_pt": "Diga quando estaria disponível para começar.",
+      "proximo": { "padrao": "n9", "se_precisa_aviso": "n8b" }
+    },
+    {
+      "id": "n8b",
+      "fala_ia": "I understand you might need to give notice at your current job. How much notice do you need to give?",
+      "resposta_alvo": "I need to give two weeks' notice.",
+      "alternativas_aceitas": ["I have to give one month's notice."],
+      "dica_pt": "Explique quanto tempo de aviso prévio você precisa dar.",
+      "proximo": { "padrao": "n9" }
+    },
+    {
+      "id": "n9",
+      "fala_ia": "Perfect. We'll be in touch within a week with our decision. Thank you for your time today.",
+      "resposta_alvo": "Thank you for the opportunity, I really enjoyed this conversation.",
+      "alternativas_aceitas": ["Thank you very much, I look forward to hearing from you."],
+      "dica_pt": "Agradeça pela oportunidade e despeça-se.",
+      "proximo": { "padrao": "fim" }
+    }
+  ],
+  "modo_livre_seed": "Continue a entrevista improvisando novas perguntas sobre experiência profissional e comportamento."
+}
