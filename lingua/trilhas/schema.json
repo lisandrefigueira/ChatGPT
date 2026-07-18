@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://lingua.local/trilhas/schema.json",
+  "title": "Trilha",
+  "type": "object",
+  "required": ["id", "titulo", "nivel", "persona", "vocabulario_alvo", "nos", "modo_livre_seed"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+    "titulo": { "type": "string", "minLength": 1 },
+    "nivel": { "type": "string", "enum": ["A2", "B1", "B2"] },
+    "persona": {
+      "type": "object",
+      "required": ["nome", "papel", "voz", "estilo"],
+      "additionalProperties": false,
+      "properties": {
+        "nome": { "type": "string", "minLength": 1 },
+        "papel": { "type": "string", "minLength": 1 },
+        "voz": { "type": "string", "minLength": 1 },
+        "estilo": { "type": "string", "minLength": 1 }
+      }
+    },
+    "vocabulario_alvo": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1
+    },
+    "nos": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 14,
+      "items": {
+        "type": "object",
+        "required": ["id", "fala_ia", "resposta_alvo", "dica_pt", "proximo"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^n[0-9]+[a-z]?$" },
+          "fala_ia": { "type": "string", "minLength": 1 },
+          "resposta_alvo": { "type": "string", "minLength": 1 },
+          "alternativas_aceitas": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "default": []
+          },
+          "dica_pt": { "type": "string", "minLength": 1 },
+          "proximo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": { "type": "string" }
+          }
+        }
+      }
+    },
+    "modo_livre_seed": { "type": "string", "minLength": 1 }
+  }
+}

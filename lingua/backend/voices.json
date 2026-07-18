@@ -1,0 +1,36 @@
+{
+  "voices": [
+    {
+      "id": "en-US-Neural2-F",
+      "lang": "en-US",
+      "genero": "fem",
+      "nome_exibicao": "Emma (US)",
+      "speaking_rate": 0.9,
+      "speaking_rate_slow": 0.7
+    },
+    {
+      "id": "en-US-Neural2-D",
+      "lang": "en-US",
+      "genero": "masc",
+      "nome_exibicao": "Mike (US)",
+      "speaking_rate": 0.9,
+      "speaking_rate_slow": 0.7
+    },
+    {
+      "id": "en-GB-Neural2-A",
+      "lang": "en-GB",
+      "genero": "fem",
+      "nome_exibicao": "Alice (UK)",
+      "speaking_rate": 0.9,
+      "speaking_rate_slow": 0.7
+    },
+    {
+      "id": "en-GB-Neural2-B",
+      "lang": "en-GB",
+      "genero": "masc",
+      "nome_exibicao": "James (UK)",
+      "speaking_rate": 0.9,
+      "speaking_rate_slow": 0.7
+    }
+  ]
+}

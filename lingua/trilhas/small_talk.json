@@ -1,0 +1,111 @@
+{
+  "id": "small_talk",
+  "titulo": "Small talk profissional",
+  "nivel": "B1",
+  "persona": {
+    "nome": "Mark Levinson",
+    "papel": "investidor em um evento de networking em São Francisco",
+    "voz": "en-GB-Neural2-B",
+    "estilo": "descontraído, mas profissional"
+  },
+  "vocabulario_alvo": [
+    "networking",
+    "business card",
+    "keynote",
+    "industry",
+    "connect",
+    "startup",
+    "LinkedIn"
+  ],
+  "nos": [
+    {
+      "id": "n1",
+      "fala_ia": "Hi there! I don't think we've met. I'm Mark.",
+      "resposta_alvo": "Hi Mark, nice to meet you. I'm Lucas.",
+      "alternativas_aceitas": ["Hello Mark, I'm Lucas, nice to meet you too."],
+      "dica_pt": "Cumprimente e diga seu nome.",
+      "proximo": { "padrao": "n2" }
+    },
+    {
+      "id": "n2",
+      "fala_ia": "Nice to meet you, Lucas. So, what do you do?",
+      "resposta_alvo": "I work as a data analyst at a fintech startup.",
+      "alternativas_aceitas": ["I'm a software engineer at a tech company."],
+      "dica_pt": "Diga sua profissão e onde trabalha.",
+      "proximo": { "padrao": "n3" }
+    },
+    {
+      "id": "n3",
+      "fala_ia": "That sounds interesting! How long have you been working there?",
+      "resposta_alvo": "I've been there for about two years now.",
+      "alternativas_aceitas": ["Just over a year now."],
+      "dica_pt": "Diga há quanto tempo trabalha lá.",
+      "proximo": { "padrao": "n4" }
+    },
+    {
+      "id": "n4",
+      "fala_ia": "What brought you to this event tonight?",
+      "resposta_alvo": "I'm looking to connect with people in the industry.",
+      "alternativas_aceitas": ["I wanted to learn more about new trends in tech."],
+      "dica_pt": "Explique por que veio ao evento.",
+      "proximo": { "padrao": "n5", "se_pergunta_recomendacao": "n5b" }
+    },
+    {
+      "id": "n5",
+      "fala_ia": "That makes sense. Are you originally from around here?",
+      "resposta_alvo": "No, actually I'm from Brazil, but I've been living here for a few years.",
+      "alternativas_aceitas": ["No, I moved here a few years ago from Brazil."],
+      "dica_pt": "Diga de onde você é.",
+      "proximo": { "padrao": "n6" }
+    },
+    {
+      "id": "n5b",
+      "fala_ia": "Great goal! Do you know anyone else here you'd recommend I talk to?",
+      "resposta_alvo": "Actually, you should meet my colleague over there, she works in AI.",
+      "alternativas_aceitas": ["I don't know many people yet, but I'll introduce you if I do."],
+      "dica_pt": "Sugira alguém para o Mark conhecer, ou diga que ainda não conhece muita gente.",
+      "proximo": { "padrao": "n6" }
+    },
+    {
+      "id": "n6",
+      "fala_ia": "That's great. What do you think about the keynote speech earlier?",
+      "resposta_alvo": "I thought it was really insightful, especially the part about AI.",
+      "alternativas_aceitas": ["Honestly, I found it a bit too technical, but interesting."],
+      "dica_pt": "Dê sua opinião sobre a palestra.",
+      "proximo": { "padrao": "n7", "se_discorda_palestra": "n6b" }
+    },
+    {
+      "id": "n6b",
+      "fala_ia": "Really? What part did you disagree with?",
+      "resposta_alvo": "I just think they focused too much on theory and not enough on real examples.",
+      "alternativas_aceitas": ["I felt the speaker didn't give enough practical examples."],
+      "dica_pt": "Explique por que discordou de uma parte da palestra.",
+      "proximo": { "padrao": "n7" }
+    },
+    {
+      "id": "n7",
+      "fala_ia": "I agree. Do you have a business card, by any chance?",
+      "resposta_alvo": "Sure, here you go. Do you have one too?",
+      "alternativas_aceitas": ["Yes, of course, here it is."],
+      "dica_pt": "Ofereça seu cartão e pergunte se ele também tem um.",
+      "proximo": { "padrao": "n8" }
+    },
+    {
+      "id": "n8",
+      "fala_ia": "Here's mine. It was great chatting with you, Lucas.",
+      "resposta_alvo": "Likewise! Let's stay in touch.",
+      "alternativas_aceitas": ["It was great meeting you too, let's connect on LinkedIn."],
+      "dica_pt": "Diga que gostou da conversa e sugira continuar em contato.",
+      "proximo": { "padrao": "n9" }
+    },
+    {
+      "id": "n9",
+      "fala_ia": "Definitely, I'll add you on LinkedIn. Have a great rest of the evening!",
+      "resposta_alvo": "You too, take care!",
+      "alternativas_aceitas": ["Thanks, you as well!"],
+      "dica_pt": "Despeça-se desejando um bom evento.",
+      "proximo": { "padrao": "fim" }
+    }
+  ],
+  "modo_livre_seed": "Continue o bate-papo improvisando novos assuntos comuns em eventos de networking."
+}

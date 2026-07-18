@@ -23,6 +23,17 @@ dist
 dist-ssr
 *.local
 
+# lingua/
+lingua/data/*
+!lingua/data/.gitkeep
+lingua/backend/__pycache__/
+lingua/backend/**/__pycache__/
+lingua/backend/.pytest_cache/
+lingua/backend/venv/
+lingua/backend/.venv/
+lingua/**/.env
+!lingua/**/.env.example
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

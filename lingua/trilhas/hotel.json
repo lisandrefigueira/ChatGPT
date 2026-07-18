@@ -1,0 +1,103 @@
+{
+  "id": "hotel",
+  "titulo": "No hotel",
+  "nivel": "A2",
+  "persona": {
+    "nome": "James",
+    "papel": "recepcionista de hotel em Londres",
+    "voz": "en-GB-Neural2-B",
+    "estilo": "educado, ritmo calmo"
+  },
+  "vocabulario_alvo": [
+    "reservation",
+    "key card",
+    "check-out time",
+    "wake-up call",
+    "luggage",
+    "front desk",
+    "passport"
+  ],
+  "nos": [
+    {
+      "id": "n1",
+      "fala_ia": "Good evening! Welcome to the Riverside Hotel. How can I help you?",
+      "resposta_alvo": "I have a reservation under the name Silva.",
+      "alternativas_aceitas": ["I'd like to check in, please.", "I booked a room online."],
+      "dica_pt": "Diga que tem uma reserva no seu nome.",
+      "proximo": { "padrao": "n2", "se_pergunta_preco": "n2b" }
+    },
+    {
+      "id": "n2",
+      "fala_ia": "Great, let me check... Yes, I found it. Could I see your passport, please?",
+      "resposta_alvo": "Sure, here you go.",
+      "alternativas_aceitas": ["Of course, here it is."],
+      "dica_pt": "Diga que sim e entregue o passaporte.",
+      "proximo": { "padrao": "n3" }
+    },
+    {
+      "id": "n2b",
+      "fala_ia": "The room rate is 90 pounds per night, breakfast included. Shall I proceed with the reservation?",
+      "resposta_alvo": "Yes, that sounds good.",
+      "alternativas_aceitas": ["Yes, please go ahead."],
+      "dica_pt": "Confirme que o preço está bom e peça para continuar.",
+      "proximo": { "padrao": "n3" }
+    },
+    {
+      "id": "n3",
+      "fala_ia": "Thank you. Your room is on the third floor, room 305. Do you need help with your luggage?",
+      "resposta_alvo": "No, thank you, I can manage.",
+      "alternativas_aceitas": ["Yes, that would be great, thank you."],
+      "dica_pt": "Diga educadamente que não precisa de ajuda com as malas.",
+      "proximo": { "padrao": "n4", "se_pede_ajuda": "n4b" }
+    },
+    {
+      "id": "n4",
+      "fala_ia": "Alright. Here is your key card. Breakfast is served from 7 to 10 in the morning.",
+      "resposta_alvo": "What time is check-out?",
+      "alternativas_aceitas": ["When do I need to check out?"],
+      "dica_pt": "Pergunte o horário de check-out.",
+      "proximo": { "padrao": "n5" }
+    },
+    {
+      "id": "n4b",
+      "fala_ia": "No problem, I'll call a porter to help you with your bags.",
+      "resposta_alvo": "Thank you very much.",
+      "alternativas_aceitas": ["That's very kind, thanks."],
+      "dica_pt": "Agradeça pela ajuda.",
+      "proximo": { "padrao": "n5" }
+    },
+    {
+      "id": "n5",
+      "fala_ia": "Check-out time is at 11 AM. Would you like a wake-up call?",
+      "resposta_alvo": "No, that's not necessary.",
+      "alternativas_aceitas": ["No, thanks, I don't need one."],
+      "dica_pt": "Diga que não precisa de despertador.",
+      "proximo": { "padrao": "n6" }
+    },
+    {
+      "id": "n6",
+      "fala_ia": "Understood. Is there anything else I can help you with tonight?",
+      "resposta_alvo": "Actually, could you recommend a good restaurant nearby?",
+      "alternativas_aceitas": ["Yes, do you know any good restaurants around here?"],
+      "dica_pt": "Peça uma recomendação de restaurante próximo.",
+      "proximo": { "padrao": "n7" }
+    },
+    {
+      "id": "n7",
+      "fala_ia": "There's a lovely Italian restaurant just around the corner called Bella Vista.",
+      "resposta_alvo": "That sounds perfect, thank you.",
+      "alternativas_aceitas": ["Great, thanks for the tip."],
+      "dica_pt": "Agradeça pela recomendação.",
+      "proximo": { "padrao": "n8" }
+    },
+    {
+      "id": "n8",
+      "fala_ia": "You're welcome. Enjoy your stay at the Riverside Hotel!",
+      "resposta_alvo": "Thank you, have a good night.",
+      "alternativas_aceitas": ["Thanks, you too!"],
+      "dica_pt": "Despeça-se educadamente desejando boa noite.",
+      "proximo": { "padrao": "fim" }
+    }
+  ],
+  "modo_livre_seed": "Continue o atendimento improvisando pedidos do hóspede, como serviço de quarto ou reclamações."
+}

@@ -1,0 +1,111 @@
+{
+  "id": "consulta_medica",
+  "titulo": "Consulta médica",
+  "nivel": "B1",
+  "persona": {
+    "nome": "Dr. Rachel Adams",
+    "papel": "clínica geral em uma clínica nos Estados Unidos",
+    "voz": "en-US-Neural2-F",
+    "estilo": "calma, atenciosa, fala devagar"
+  },
+  "vocabulario_alvo": [
+    "sore throat",
+    "fever",
+    "medication",
+    "allergy",
+    "prescribe",
+    "symptoms",
+    "contagious"
+  ],
+  "nos": [
+    {
+      "id": "n1",
+      "fala_ia": "Good morning! What brings you in today?",
+      "resposta_alvo": "I've had a sore throat and a fever since yesterday.",
+      "alternativas_aceitas": ["I haven't been feeling well, I have a headache and a fever."],
+      "dica_pt": "Descreva os sintomas que está sentindo.",
+      "proximo": { "padrao": "n2" }
+    },
+    {
+      "id": "n2",
+      "fala_ia": "I'm sorry to hear that. On a scale of one to ten, how bad is the pain?",
+      "resposta_alvo": "I'd say it's about a six.",
+      "alternativas_aceitas": ["It's pretty bad, maybe a seven."],
+      "dica_pt": "Avalie a dor numa escala de 1 a 10.",
+      "proximo": { "padrao": "n3" }
+    },
+    {
+      "id": "n3",
+      "fala_ia": "Have you taken any medication for it?",
+      "resposta_alvo": "Yes, I took some paracetamol yesterday.",
+      "alternativas_aceitas": ["No, I haven't taken anything yet."],
+      "dica_pt": "Diga se já tomou algum remédio.",
+      "proximo": { "padrao": "n4", "se_nao_tomou": "n4b" }
+    },
+    {
+      "id": "n4",
+      "fala_ia": "Did it help with the fever?",
+      "resposta_alvo": "It helped a little, but the fever came back.",
+      "alternativas_aceitas": ["Yes, it helped, but only for a few hours."],
+      "dica_pt": "Diga se o remédio ajudou.",
+      "proximo": { "padrao": "n5" }
+    },
+    {
+      "id": "n4b",
+      "fala_ia": "Alright, I'll recommend something after the examination. Do you have any allergies to medication?",
+      "resposta_alvo": "No, I don't have any allergies.",
+      "alternativas_aceitas": ["Yes, I'm allergic to penicillin."],
+      "dica_pt": "Diga se tem alguma alergia a remédios.",
+      "proximo": { "padrao": "n5" }
+    },
+    {
+      "id": "n5",
+      "fala_ia": "Let me check your throat and temperature. Please open your mouth and say 'ah'.",
+      "resposta_alvo": "Okay, here we go.",
+      "alternativas_aceitas": ["Sure, no problem."],
+      "dica_pt": "Concorde em abrir a boca para o exame.",
+      "proximo": { "padrao": "n6" }
+    },
+    {
+      "id": "n6",
+      "fala_ia": "I see some redness in your throat, and your temperature is 38.5. It looks like a viral infection.",
+      "resposta_alvo": "Is it serious, doctor?",
+      "alternativas_aceitas": ["Do I need any special treatment?"],
+      "dica_pt": "Pergunte se é algo sério.",
+      "proximo": { "padrao": "n7", "se_pergunta_contagioso": "n6b" }
+    },
+    {
+      "id": "n6b",
+      "fala_ia": "Yes, it can be contagious, so try to avoid close contact with others for a few days.",
+      "resposta_alvo": "Okay, I'll be careful.",
+      "alternativas_aceitas": ["Got it, I'll stay home for a while."],
+      "dica_pt": "Diga que vai tomar cuidado para não transmitir.",
+      "proximo": { "padrao": "n7" }
+    },
+    {
+      "id": "n7",
+      "fala_ia": "It's not serious, but you should rest and drink plenty of fluids for a few days.",
+      "resposta_alvo": "Should I take any medicine?",
+      "alternativas_aceitas": ["Do I need antibiotics?"],
+      "dica_pt": "Pergunte se precisa tomar algum remédio.",
+      "proximo": { "padrao": "n8" }
+    },
+    {
+      "id": "n8",
+      "fala_ia": "I'll prescribe something to reduce the fever and soothe your throat. No antibiotics are needed right now.",
+      "resposta_alvo": "Okay, thank you, doctor.",
+      "alternativas_aceitas": ["That's a relief, thank you."],
+      "dica_pt": "Agradeça pela explicação do médico.",
+      "proximo": { "padrao": "n9" }
+    },
+    {
+      "id": "n9",
+      "fala_ia": "If you don't feel better in three days, please come back or call the clinic.",
+      "resposta_alvo": "I will, thank you for your help.",
+      "alternativas_aceitas": ["Understood, thanks for everything."],
+      "dica_pt": "Agradeça e concorde em voltar se não melhorar.",
+      "proximo": { "padrao": "fim" }
+    }
+  ],
+  "modo_livre_seed": "Continue a consulta improvisando perguntas do médico sobre o histórico de saúde do paciente."
+}

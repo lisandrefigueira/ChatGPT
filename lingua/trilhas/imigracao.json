@@ -1,0 +1,103 @@
+{
+  "id": "imigracao",
+  "titulo": "Imigração / aeroporto",
+  "nivel": "A2",
+  "persona": {
+    "nome": "Officer Daniel Brooks",
+    "papel": "agente de imigração no aeroporto de Heathrow, Londres",
+    "voz": "en-GB-Neural2-A",
+    "estilo": "sério, direto, ritmo moderado"
+  },
+  "vocabulario_alvo": [
+    "passport",
+    "purpose of visit",
+    "return ticket",
+    "declare",
+    "customs",
+    "stay",
+    "business trip"
+  ],
+  "nos": [
+    {
+      "id": "n1",
+      "fala_ia": "Good afternoon. Passport, please.",
+      "resposta_alvo": "Here you go.",
+      "alternativas_aceitas": ["Here's my passport."],
+      "dica_pt": "Entregue o passaporte.",
+      "proximo": { "padrao": "n2" }
+    },
+    {
+      "id": "n2",
+      "fala_ia": "What is the purpose of your visit?",
+      "resposta_alvo": "I'm here on vacation.",
+      "alternativas_aceitas": ["I'm visiting for tourism.", "I'm here for business."],
+      "dica_pt": "Diga o motivo da viagem, por exemplo turismo.",
+      "proximo": { "padrao": "n3", "se_negocios": "n3b" }
+    },
+    {
+      "id": "n3",
+      "fala_ia": "How long are you planning to stay?",
+      "resposta_alvo": "I'll be staying for two weeks.",
+      "alternativas_aceitas": ["I'm staying for ten days."],
+      "dica_pt": "Diga por quanto tempo vai ficar.",
+      "proximo": { "padrao": "n4" }
+    },
+    {
+      "id": "n3b",
+      "fala_ia": "I see, business. Which company are you visiting?",
+      "resposta_alvo": "I'm visiting a partner company called TechCorp.",
+      "alternativas_aceitas": ["I have meetings with a company here."],
+      "dica_pt": "Diga o nome da empresa que vai visitar.",
+      "proximo": { "padrao": "n4" }
+    },
+    {
+      "id": "n4",
+      "fala_ia": "Where will you be staying during your trip?",
+      "resposta_alvo": "I'll be staying at a hotel in central London.",
+      "alternativas_aceitas": ["I'm staying with a friend."],
+      "dica_pt": "Diga onde vai se hospedar.",
+      "proximo": { "padrao": "n5" }
+    },
+    {
+      "id": "n5",
+      "fala_ia": "Do you have a return ticket?",
+      "resposta_alvo": "Yes, I do. Here it is.",
+      "alternativas_aceitas": ["Yes, I'm flying back next month."],
+      "dica_pt": "Confirme que tem passagem de volta.",
+      "proximo": { "padrao": "n6" }
+    },
+    {
+      "id": "n6",
+      "fala_ia": "Are you carrying any food, plants, or large amounts of cash?",
+      "resposta_alvo": "No, I'm not carrying anything like that.",
+      "alternativas_aceitas": ["No, nothing to declare."],
+      "dica_pt": "Diga que não tem nada a declarar.",
+      "proximo": { "padrao": "n7", "se_tem_algo": "n7b" }
+    },
+    {
+      "id": "n7",
+      "fala_ia": "Alright, that's all I need. Enjoy your stay.",
+      "resposta_alvo": "Thank you very much.",
+      "alternativas_aceitas": ["Thank you, have a nice day."],
+      "dica_pt": "Agradeça ao agente.",
+      "proximo": { "padrao": "n8" }
+    },
+    {
+      "id": "n7b",
+      "fala_ia": "Okay, please step aside so we can check your bag.",
+      "resposta_alvo": "Sure, no problem.",
+      "alternativas_aceitas": ["Of course, I understand."],
+      "dica_pt": "Concorde em ir para a inspeção.",
+      "proximo": { "padrao": "n8" }
+    },
+    {
+      "id": "n8",
+      "fala_ia": "Welcome to the United Kingdom.",
+      "resposta_alvo": "Thank you, glad to be here.",
+      "alternativas_aceitas": ["Thanks, happy to finally be here."],
+      "dica_pt": "Agradeça e demonstre estar feliz de chegar.",
+      "proximo": { "padrao": "fim" }
+    }
+  ],
+  "modo_livre_seed": "Continue a inspeção de imigração improvisando perguntas adicionais sobre a viagem."
+}
