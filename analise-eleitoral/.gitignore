@@ -1,0 +1,5 @@
+dados_tse/
+resultados/
+demo*/
+__pycache__/
+.pytest_cache/
