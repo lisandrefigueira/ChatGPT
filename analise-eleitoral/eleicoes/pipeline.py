@@ -41,6 +41,7 @@ def _linha(ano, turno, cand, metrica, valor, inf=np.nan, sup=np.nan):
 
 
 def analisar_ano(ano: int, turnos: dict[int, pd.DataFrame], saida: Path, n_boot: int, usar_lphom: bool) -> tuple[list, dict]:
+    print(f"[{ano}] inicio", flush=True)
     rng = np.random.default_rng(config.SEMENTE + ano)
     fin = finalistas(turnos)
     rot = dict(zip(fin, ["A", "B"]))
@@ -87,6 +88,7 @@ def analisar_ano(ano: int, turnos: dict[int, pd.DataFrame], saida: Path, n_boot:
         metr.append(_linha(ano, 2, comparar.TODOS, "ei_frac_residuo_extremo", k / max(n, 1), *_wilson(k, n)))
         extra["ei"] = {k: v["P"].round(4).to_dict() for k, v in ei.items()}
 
+    print(f"[{ano}] inferencia ecologica concluida", flush=True)
     # 2 e 3. Impressão digital e forense, para os dois finalistas, em cada turno.
     for turno, df in turnos.items():
         for cand in fin:
@@ -102,6 +104,7 @@ def analisar_ano(ano: int, turnos: dict[int, pd.DataFrame], saida: Path, n_boot:
                 for col in ("fi", "fe"):
                     metr.append(_linha(ano, turno, r, f"fp_{col}_ponderado", *_media_uf_bootstrap(por_uf, col, n_boot, rng)))
             bat = forense.bateria(df, cand, n_boot=n_boot, rng=rng)
+            print(f"[{ano}] turno {turno} candidato {r} concluido", flush=True)
             metr.append(_linha(ano, turno, r, "2bl_media_2bl", bat["2bl_media_2bl"], bat.get("2bl_media_2bl_inf", np.nan), bat.get("2bl_media_2bl_sup", np.nan)))
             for k in ("ult_frac_0_ou_5", "pint_comp_razao_obs_esp", "pint_voto_razao_obs_esp", "pint_voto_z", "pint_comp_z"):
                 metr.append(_linha(ano, turno, r, k, bat[k]))
@@ -111,7 +114,8 @@ def analisar_ano(ano: int, turnos: dict[int, pd.DataFrame], saida: Path, n_boot:
 def rodar(conjunto: dict[int, dict[int, pd.DataFrame]], saida: Path, ano_alvo: int, n_boot: int = config.N_BOOTSTRAP, usar_lphom: bool = False) -> dict:
     saida.mkdir(parents=True, exist_ok=True)
     todas, extras = [], {}
-    for ano, turnos in sorted(conjunto.items()):
+    for ano in sorted(conjunto):
+        turnos = conjunto[ano]
         m, e = analisar_ano(ano, turnos, saida, n_boot, usar_lphom)
         todas += m
         extras[ano] = e

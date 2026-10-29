@@ -40,6 +40,7 @@ def main(argv=None) -> int:
         for ano in [*a.referencias, a.alvo]:
             try:
                 conjunto[ano] = dados.carregar_ano(ano, a.dados, baixar_se_faltar=not a.sem_download)
+                print(f"[{ano}] dados carregados", flush=True)
             except Exception as e:  # noqa: BLE001
                 print(f"[erro] {ano}: {e}", file=sys.stderr)
                 if ano == a.alvo:

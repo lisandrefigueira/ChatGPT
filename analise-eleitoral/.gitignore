@@ -3,3 +3,5 @@ resultados/
 demo*/
 __pycache__/
 .pytest_cache/
+resultados*/
+resultados.log
