@@ -80,3 +80,11 @@ Qualquer mudança neste arquivo ou em `config.py` depois da leitura dos dados
 de 2026 deve ser feita em commit próprio, com a justificativa. O relatório
 apresenta o resultado pela regra original e, se for o caso, também pela regra
 alterada.
+
+### Desvios registrados
+
+* **29/10/2026, antes da leitura dos resultados de 2026:** o LPHOM por UF
+  com seções como unidade não terminou em mais de 30 minutos numa UF grande.
+  O programa linear tinha cerca de 800 mil variáveis. Ele passou a ser
+  ajustado com os municípios como unidade. O LPHOM é checagem de robustez da
+  inferência ecológica e não entra na regra de decisão.

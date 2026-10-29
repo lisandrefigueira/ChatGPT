@@ -65,8 +65,8 @@ para conferir que os testes detectam o que foi plantado. Não é resultado real.
   município (`goodman_municipal`) é só sensibilidade: na validação
   sintética, ela superestimou fluxos pequenos.
 * **LPHOM** (`lphom`): programação linear que minimiza desvios absolutos
-  (Romero, Pavía, Martín & Romero, 2020), ajustada por UF. Serve de checagem de
-  robustez.
+  (Romero, Pavía, Martín & Romero, 2020), com os municípios como unidade.
+  Serve de checagem de robustez.
 * **Limites determinísticos** (`limites_deterministicos`): pisos e tetos que
   valem sem modelo nenhum.
 * **Impressão digital** (`impressao_digital`): histograma 2D e o modelo de

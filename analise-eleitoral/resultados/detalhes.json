@@ -1,0 +1,542 @@
+{
+  "2014": {
+    "finalistas": {
+      "A": "V13",
+      "B": "V45"
+    },
+    "consistencia": {
+      "1": {
+        "secoes": 428854.0,
+        "aptos": 142821358.0,
+        "comparecimento": 115122883.0,
+        "votos_apurados": 115122883.0,
+        "secoes_votos_diferente_comparecimento": 0.0,
+        "secoes_comparecimento_maior_aptos": 0.0,
+        "total_V13": 43267668.0,
+        "total_V16": 91209.0,
+        "total_V20": 780513.0,
+        "total_V21": 47845.0,
+        "total_V27": 61250.0,
+        "total_V28": 446878.0,
+        "total_V29": 12324.0,
+        "total_V40": 22176619.0,
+        "total_V43": 630099.0,
+        "total_V45": 34897211.0,
+        "total_V50": 1612186.0
+      },
+      "2": {
+        "secoes": 428852.0,
+        "aptos": 142821298.0,
+        "comparecimento": 112683879.0,
+        "votos_apurados": 112683879.0,
+        "secoes_votos_diferente_comparecimento": 0.0,
+        "secoes_comparecimento_maior_aptos": 0.0,
+        "total_V13": 54501118.0,
+        "total_V45": 51041155.0
+      }
+    },
+    "secoes_pareadas": {
+      "t1": 428854,
+      "t2": 428852,
+      "pareadas": 428852
+    },
+    "ei": {
+      "goodman_global": {
+        "A": {
+          "A": 0.962,
+          "B": 0.0,
+          "OUTROS": 0.3575,
+          "BRANCO_NULO": 0.3608,
+          "ABSTENCAO": 0.0
+        },
+        "B": {
+          "A": 0.0,
+          "B": 1.0,
+          "OUTROS": 0.5329,
+          "BRANCO_NULO": 0.1205,
+          "ABSTENCAO": 0.0279
+        },
+        "BRANCO_NULO": {
+          "A": 0.0,
+          "B": 0.0,
+          "OUTROS": 0.0697,
+          "BRANCO_NULO": 0.4886,
+          "ABSTENCAO": 0.0
+        },
+        "ABSTENCAO": {
+          "A": 0.038,
+          "B": 0.0,
+          "OUTROS": 0.0398,
+          "BRANCO_NULO": 0.0301,
+          "ABSTENCAO": 0.9721
+        }
+      },
+      "goodman_local": {
+        "A": {
+          "A": 0.9513,
+          "B": 0.0018,
+          "OUTROS": 0.327,
+          "BRANCO_NULO": 0.4389,
+          "ABSTENCAO": 0.0023
+        },
+        "B": {
+          "A": 0.0024,
+          "B": 0.994,
+          "OUTROS": 0.5404,
+          "BRANCO_NULO": 0.1049,
+          "ABSTENCAO": 0.0388
+        },
+        "BRANCO_NULO": {
+          "A": 0.0077,
+          "B": 0.0008,
+          "OUTROS": 0.0779,
+          "BRANCO_NULO": 0.4202,
+          "ABSTENCAO": 0.003
+        },
+        "ABSTENCAO": {
+          "A": 0.0386,
+          "B": 0.0033,
+          "OUTROS": 0.0546,
+          "BRANCO_NULO": 0.036,
+          "ABSTENCAO": 0.9559
+        }
+      },
+      "goodman_municipal": {
+        "A": {
+          "A": 0.9448,
+          "B": 0.018,
+          "OUTROS": 0.2912,
+          "BRANCO_NULO": 0.429,
+          "ABSTENCAO": 0.0265
+        },
+        "B": {
+          "A": 0.012,
+          "B": 0.9588,
+          "OUTROS": 0.5403,
+          "BRANCO_NULO": 0.1397,
+          "ABSTENCAO": 0.0558
+        },
+        "BRANCO_NULO": {
+          "A": 0.0132,
+          "B": 0.0059,
+          "OUTROS": 0.0785,
+          "BRANCO_NULO": 0.361,
+          "ABSTENCAO": 0.0117
+        },
+        "ABSTENCAO": {
+          "A": 0.03,
+          "B": 0.0173,
+          "OUTROS": 0.09,
+          "BRANCO_NULO": 0.0703,
+          "ABSTENCAO": 0.906
+        }
+      }
+    }
+  },
+  "2018": {
+    "finalistas": {
+      "A": "V13",
+      "B": "V17"
+    },
+    "consistencia": {
+      "1": {
+        "secoes": 454450.0,
+        "aptos": 147305825.0,
+        "comparecimento": 117364654.0,
+        "votos_apurados": 117364654.0,
+        "secoes_votos_diferente_comparecimento": 0.0,
+        "secoes_comparecimento_maior_aptos": 0.0,
+        "total_V12": 13344371.0,
+        "total_V13": 31342051.0,
+        "total_V15": 1288950.0,
+        "total_V16": 55762.0,
+        "total_V17": 49277010.0,
+        "total_V18": 1069578.0,
+        "total_V19": 859601.0,
+        "total_V27": 41710.0,
+        "total_V30": 2679745.0,
+        "total_V45": 5096350.0,
+        "total_V50": 617122.0,
+        "total_V51": 1348323.0,
+        "total_V54": 30176.0
+      },
+      "2": {
+        "secoes": 454448.0,
+        "aptos": 147305155.0,
+        "comparecimento": 115933451.0,
+        "votos_apurados": 115933451.0,
+        "secoes_votos_diferente_comparecimento": 0.0,
+        "secoes_comparecimento_maior_aptos": 0.0,
+        "total_V13": 47040906.0,
+        "total_V17": 57797847.0
+      }
+    },
+    "secoes_pareadas": {
+      "t1": 454450,
+      "t2": 454448,
+      "pareadas": 454448
+    },
+    "ei": {
+      "goodman_global": {
+        "A": {
+          "A": 0.9905,
+          "B": 0.0,
+          "OUTROS": 0.5598,
+          "BRANCO_NULO": 0.1615,
+          "ABSTENCAO": 0.0
+        },
+        "B": {
+          "A": 0.0,
+          "B": 1.0,
+          "OUTROS": 0.2542,
+          "BRANCO_NULO": 0.1636,
+          "ABSTENCAO": 0.0
+        },
+        "BRANCO_NULO": {
+          "A": 0.0,
+          "B": 0.0,
+          "OUTROS": 0.1491,
+          "BRANCO_NULO": 0.6749,
+          "ABSTENCAO": 0.0038
+        },
+        "ABSTENCAO": {
+          "A": 0.0095,
+          "B": 0.0,
+          "OUTROS": 0.0368,
+          "BRANCO_NULO": 0.0,
+          "ABSTENCAO": 0.9962
+        }
+      },
+      "goodman_local": {
+        "A": {
+          "A": 0.9487,
+          "B": 0.0001,
+          "OUTROS": 0.5604,
+          "BRANCO_NULO": 0.221,
+          "ABSTENCAO": 0.0109
+        },
+        "B": {
+          "A": 0.0004,
+          "B": 0.9927,
+          "OUTROS": 0.2553,
+          "BRANCO_NULO": 0.1493,
+          "ABSTENCAO": 0.0194
+        },
+        "BRANCO_NULO": {
+          "A": 0.0167,
+          "B": 0.0033,
+          "OUTROS": 0.1439,
+          "BRANCO_NULO": 0.6155,
+          "ABSTENCAO": 0.0069
+        },
+        "ABSTENCAO": {
+          "A": 0.0342,
+          "B": 0.0039,
+          "OUTROS": 0.0404,
+          "BRANCO_NULO": 0.0142,
+          "ABSTENCAO": 0.9628
+        }
+      },
+      "goodman_municipal": {
+        "A": {
+          "A": 0.9218,
+          "B": 0.007,
+          "OUTROS": 0.5217,
+          "BRANCO_NULO": 0.2739,
+          "ABSTENCAO": 0.0411
+        },
+        "B": {
+          "A": 0.0086,
+          "B": 0.9663,
+          "OUTROS": 0.2697,
+          "BRANCO_NULO": 0.1535,
+          "ABSTENCAO": 0.04
+        },
+        "BRANCO_NULO": {
+          "A": 0.0325,
+          "B": 0.0082,
+          "OUTROS": 0.136,
+          "BRANCO_NULO": 0.5339,
+          "ABSTENCAO": 0.0185
+        },
+        "ABSTENCAO": {
+          "A": 0.0371,
+          "B": 0.0186,
+          "OUTROS": 0.0726,
+          "BRANCO_NULO": 0.0386,
+          "ABSTENCAO": 0.9004
+        }
+      }
+    }
+  },
+  "2022": {
+    "finalistas": {
+      "A": "V13",
+      "B": "V22"
+    },
+    "consistencia": {
+      "1": {
+        "secoes": 472028.0,
+        "aptos": 156453354.0,
+        "comparecimento": 123682372.0,
+        "votos_apurados": 123682372.0,
+        "secoes_votos_diferente_comparecimento": 0.0,
+        "secoes_comparecimento_maior_aptos": 0.0,
+        "total_V12": 3599287.0,
+        "total_V13": 57259504.0,
+        "total_V14": 81129.0,
+        "total_V15": 4915423.0,
+        "total_V16": 25625.0,
+        "total_V21": 45620.0,
+        "total_V22": 51072345.0,
+        "total_V27": 16604.0,
+        "total_V30": 559708.0,
+        "total_V44": 600955.0,
+        "total_V80": 53519.0
+      },
+      "2": {
+        "secoes": 472028.0,
+        "aptos": 156453354.0,
+        "comparecimento": 124252796.0,
+        "votos_apurados": 124252796.0,
+        "secoes_votos_diferente_comparecimento": 0.0,
+        "secoes_comparecimento_maior_aptos": 0.0,
+        "total_V13": 60345999.0,
+        "total_V22": 58206354.0
+      }
+    },
+    "secoes_pareadas": {
+      "t1": 472028,
+      "t2": 472028,
+      "pareadas": 472028
+    },
+    "ei": {
+      "goodman_global": {
+        "A": {
+          "A": 0.9778,
+          "B": 0.0,
+          "OUTROS": 0.3342,
+          "BRANCO_NULO": 0.1776,
+          "ABSTENCAO": 0.0051
+        },
+        "B": {
+          "A": 0.0,
+          "B": 1.0,
+          "OUTROS": 0.4994,
+          "BRANCO_NULO": 0.2034,
+          "ABSTENCAO": 0.032
+        },
+        "BRANCO_NULO": {
+          "A": 0.0077,
+          "B": 0.0,
+          "OUTROS": 0.1621,
+          "BRANCO_NULO": 0.619,
+          "ABSTENCAO": 0.0076
+        },
+        "ABSTENCAO": {
+          "A": 0.0144,
+          "B": 0.0,
+          "OUTROS": 0.0043,
+          "BRANCO_NULO": 0.0,
+          "ABSTENCAO": 0.9553
+        }
+      },
+      "goodman_local": {
+        "A": {
+          "A": 0.9633,
+          "B": 0.0,
+          "OUTROS": 0.3632,
+          "BRANCO_NULO": 0.1614,
+          "ABSTENCAO": 0.0232
+        },
+        "B": {
+          "A": 0.0,
+          "B": 0.9992,
+          "OUTROS": 0.4388,
+          "BRANCO_NULO": 0.2743,
+          "ABSTENCAO": 0.0398
+        },
+        "BRANCO_NULO": {
+          "A": 0.01,
+          "B": 0.0003,
+          "OUTROS": 0.1774,
+          "BRANCO_NULO": 0.5429,
+          "ABSTENCAO": 0.0113
+        },
+        "ABSTENCAO": {
+          "A": 0.0267,
+          "B": 0.0005,
+          "OUTROS": 0.0206,
+          "BRANCO_NULO": 0.0214,
+          "ABSTENCAO": 0.9258
+        }
+      },
+      "goodman_municipal": {
+        "A": {
+          "A": 0.9407,
+          "B": 0.0037,
+          "OUTROS": 0.3598,
+          "BRANCO_NULO": 0.2172,
+          "ABSTENCAO": 0.0476
+        },
+        "B": {
+          "A": 0.0116,
+          "B": 0.9858,
+          "OUTROS": 0.4236,
+          "BRANCO_NULO": 0.2424,
+          "ABSTENCAO": 0.0508
+        },
+        "BRANCO_NULO": {
+          "A": 0.016,
+          "B": 0.0022,
+          "OUTROS": 0.161,
+          "BRANCO_NULO": 0.4853,
+          "ABSTENCAO": 0.0131
+        },
+        "ABSTENCAO": {
+          "A": 0.0317,
+          "B": 0.0083,
+          "OUTROS": 0.0556,
+          "BRANCO_NULO": 0.0552,
+          "ABSTENCAO": 0.8884
+        }
+      }
+    }
+  },
+  "2026": {
+    "finalistas": {
+      "A": "V13",
+      "B": "V22"
+    },
+    "consistencia": {
+      "1": {
+        "secoes": 499206.0,
+        "aptos": 158745007.0,
+        "comparecimento": 125275835.0,
+        "votos_apurados": 125275835.0,
+        "secoes_votos_diferente_comparecimento": 0.0,
+        "secoes_comparecimento_maior_aptos": 0.0,
+        "total_V13": 53879538.0,
+        "total_V14": 2675887.0,
+        "total_V16": 43103.0,
+        "total_V21": 22693.0,
+        "total_V22": 56104503.0,
+        "total_V27": 40043.0,
+        "total_V28": 5246.0,
+        "total_V29": 15024.0,
+        "total_V30": 326488.0,
+        "total_V35": 16881.0,
+        "total_V55": 2605148.0,
+        "total_V70": 3448569.0,
+        "total_V80": 122911.0
+      },
+      "2": {
+        "secoes": 499205.0,
+        "aptos": 158744977.0,
+        "comparecimento": 128236074.0,
+        "votos_apurados": 128236074.0,
+        "secoes_votos_diferente_comparecimento": 0.0,
+        "secoes_comparecimento_maior_aptos": 0.0,
+        "total_V13": 64256232.0,
+        "total_V22": 59826041.0
+      }
+    },
+    "secoes_pareadas": {
+      "t1": 499206,
+      "t2": 499205,
+      "pareadas": 499205
+    },
+    "ei": {
+      "goodman_global": {
+        "A": {
+          "A": 1.0,
+          "B": 0.0,
+          "OUTROS": 0.395,
+          "BRANCO_NULO": 0.6986,
+          "ABSTENCAO": 0.0749
+        },
+        "B": {
+          "A": 0.0,
+          "B": 0.9925,
+          "OUTROS": 0.4503,
+          "BRANCO_NULO": 0.0,
+          "ABSTENCAO": 0.0033
+        },
+        "BRANCO_NULO": {
+          "A": 0.0,
+          "B": 0.0,
+          "OUTROS": 0.1548,
+          "BRANCO_NULO": 0.3014,
+          "ABSTENCAO": 0.0249
+        },
+        "ABSTENCAO": {
+          "A": 0.0,
+          "B": 0.0075,
+          "OUTROS": 0.0,
+          "BRANCO_NULO": 0.0,
+          "ABSTENCAO": 0.8969
+        }
+      },
+      "goodman_local": {
+        "A": {
+          "A": 0.9887,
+          "B": 0.0017,
+          "OUTROS": 0.4235,
+          "BRANCO_NULO": 0.6286,
+          "ABSTENCAO": 0.0955
+        },
+        "B": {
+          "A": 0.0,
+          "B": 0.9883,
+          "OUTROS": 0.3817,
+          "BRANCO_NULO": 0.0127,
+          "ABSTENCAO": 0.0238
+        },
+        "BRANCO_NULO": {
+          "A": 0.0016,
+          "B": 0.003,
+          "OUTROS": 0.146,
+          "BRANCO_NULO": 0.3538,
+          "ABSTENCAO": 0.0117
+        },
+        "ABSTENCAO": {
+          "A": 0.0096,
+          "B": 0.0071,
+          "OUTROS": 0.0488,
+          "BRANCO_NULO": 0.0049,
+          "ABSTENCAO": 0.8691
+        }
+      },
+      "goodman_municipal": {
+        "A": {
+          "A": 0.9811,
+          "B": 0.0081,
+          "OUTROS": 0.3659,
+          "BRANCO_NULO": 0.5723,
+          "ABSTENCAO": 0.1226
+        },
+        "B": {
+          "A": 0.0033,
+          "B": 0.9693,
+          "OUTROS": 0.3897,
+          "BRANCO_NULO": 0.0691,
+          "ABSTENCAO": 0.0372
+        },
+        "BRANCO_NULO": {
+          "A": 0.0036,
+          "B": 0.0048,
+          "OUTROS": 0.1422,
+          "BRANCO_NULO": 0.315,
+          "ABSTENCAO": 0.0142
+        },
+        "ABSTENCAO": {
+          "A": 0.012,
+          "B": 0.0178,
+          "OUTROS": 0.1022,
+          "BRANCO_NULO": 0.0435,
+          "ABSTENCAO": 0.8261
+        }
+      }
+    }
+  }
+}

@@ -58,8 +58,11 @@ def analisar_ano(ano: int, turnos: dict[int, pd.DataFrame], saida: Path, n_boot:
         mun = inferencia.goodman_local(tab, grupo=("SG_UF", "CD_MUNICIPIO"))
         ei = {"goodman_global": g, "goodman_local": loc, "goodman_municipal": mun}
         if usar_lphom:
-            fl = sum(inferencia.migracao(inferencia.lphom(gu), gu) for _, gu in tab.groupby("SG_UF"))
-            ei["lphom_por_uf"] = {"P": fl.div(fl.sum(axis=1), axis=0)}
+            # Seções agregadas por município: o LP por seção numa UF grande
+            # (~800 mil variáveis) não termina em tempo razoável.
+            cols = [c for c in tab.columns if c.startswith(("X_", "Y_"))]
+            mun_tab = tab.groupby(["SG_UF", "CD_MUNICIPIO"], as_index=False)[cols].sum()
+            ei["lphom_municipios"] = {"P": inferencia.lphom(mun_tab)}
         for nome, r in ei.items():
             r["P"].to_csv(saida / f"{ano}_transicao_{nome}.csv", float_format="%.4f")
             inferencia.migracao(r["P"], tab).round(0).to_csv(saida / f"{ano}_eleitores_{nome}.csv")

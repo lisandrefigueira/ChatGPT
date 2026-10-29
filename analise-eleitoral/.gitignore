@@ -1,7 +1,7 @@
 dados_tse/
-resultados/
+
 demo*/
 __pycache__/
 .pytest_cache/
-resultados*/
+resultados_lphom/
 resultados.log
